@@ -52,4 +52,10 @@
   DDLogVerbose(@"SCRUBBER: Change %f", self.value);
 }
 
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent*)event {
+    CGRect bounds = self.bounds;
+    bounds = CGRectInset(bounds, -15, -15);
+    return CGRectContainsPoint(bounds, point);
+}
+
 @end
