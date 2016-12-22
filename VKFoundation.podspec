@@ -21,7 +21,6 @@ Pod::Spec.new do |s|
   s.dependency 'Reachability', '~> 3.1.1'
   s.dependency 'DTCoreText', '~> 1.6.11'
   s.dependency 'CocoaLumberjack', '~> 1.7.0'
-  s.dependency 'FXImageView', '~> 1.3.3'
 
   I18n.enforce_available_locales = false
 end
